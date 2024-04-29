@@ -41,8 +41,8 @@ def carregar_foto_diretorio(dir, metadata_file):
     return imagens, labels, metadata
 
 
-dir_dados_de_treino = 'Dados de Treinamento'
-arquivo_metadados = 'Dados de Treinamento/Dados.xlsx'
+dir_dados_de_treino = 'Verification System/Dados de Treinamento'
+arquivo_metadados = 'Verification System/Dados de Treinamento/Dados.xlsx'
 
 '''
     encodes_conhecidos = guarda os valores de encode de faces conhecidos
