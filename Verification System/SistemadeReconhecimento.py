@@ -9,7 +9,8 @@ def carregar_foto_diretorio(dir, metadata_file):
     '''
     entrada:
         dir = diretório das imagens para treinamento
-        metadata_file = arquivo onde tem as informações relevantes de cada imagem
+        metadata_file = arquivo onde tem as informações relevantes de cada
+          imagem
 
     saída:
         imagens = encoding da primeira face da imagem
@@ -90,11 +91,14 @@ while True:
         cv2.rectangle(frame, (esquerda, topo),
                       (direita, baixo), (0, 0, 2555))
         cv2.putText(frame, f'Nome:{nome_completo}',
-                    (esquerda, baixo+20), cv2.FONT_HERSHEY_PLAIN, 0.8, (0, 255, 0), 1)
+                    (esquerda, baixo+20), cv2.FONT_HERSHEY_PLAIN, 0.8,
+                    (0, 255, 0), 1)
         cv2.putText(frame, f'Idade:{idade}',
-                    (esquerda, baixo+40), cv2.FONT_HERSHEY_PLAIN, 0.8, (0, 255, 0), 1)
+                    (esquerda, baixo+40), cv2.FONT_HERSHEY_PLAIN, 0.8,
+                    (0, 255, 0), 1)
         cv2.putText(frame, f'Sexo:{sexo}',
-                    (esquerda, baixo+60), cv2.FONT_HERSHEY_PLAIN, 0.8, (0, 255, 0), 1)
+                    (esquerda, baixo+60), cv2.FONT_HERSHEY_PLAIN, 0.8,
+                    (0, 255, 0), 1)
     cv2.imshow('Webcam Camera', frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):  # Masking com 0xFF
         break
