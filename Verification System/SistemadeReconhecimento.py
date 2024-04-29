@@ -58,7 +58,7 @@ encodes_conhecidos, frame_conhecido_nomes, metadata = carregar_foto_diretorio(
 
 
 captura_de_camera = cv2.VideoCapture(0)
-fps = 0
+fps: int = 0
 t = time.time()
 while True:
     ret, frame = captura_de_camera.read()
